@@ -46,47 +46,47 @@ puts "name of rabbit is #{rabbit.name} (Rabbit of Caerbannog)"  # getter
 # name of rabbit is Rabbit of Caerbannog
 
 puts "\nteletubby (medium) vs dalek (high) (test Monster.fight)"
-# dalek.name = "dalek"
-# teletubby.name = "teletubby"
-# puts "winner is #{Monster.fight(teletubby, dalek).name} (dalek)"
+dalek.name = "dalek"
+teletubby.name = "teletubby"
+puts "winner is #{Monster.fight(teletubby, dalek).name} (dalek)"
 
 puts "\nteletubby (medium) vs rabbit (medium) (test Monster.fight)"
-# puts "winner is #{Monster.fight(teletubby, rabbit).name} (Rabbit of Caerbannog)"
+puts "winner is #{Monster.fight(teletubby, rabbit).name} (Rabbit of Caerbannog)"
 
 #### INHERITANCE ####
 puts "\n#### INHERITANCE ####"
 
 puts "\nRob Zombie (test Zombie initialize)"
-# rob = Zombie.new
-# # Rawr!
-# # 5 monsters now roam the world!
-# rob.name = "Rob Zombie"	# also testing name getter and setter method inheritance
-# puts "#{rob.name}'s habitat is #{rob.habitat} (graveyard)"
-# # Rob Zombie's habitat is graveyard
-# puts "#{rob.name}'s threat level is #{rob.threat_level} (medium)"
-# # Rob Zombie's threat level is medium
+rob = Zombie.new
+# Rawr!
+# 5 monsters now roam the world!
+rob.name = "Rob Zombie"	# also testing name getter and setter method inheritance
+puts "#{rob.name}'s habitat is #{rob.habitat} (graveyard)"
+# Rob Zombie's habitat is graveyard
+puts "#{rob.name}'s threat level is #{rob.threat_level} (medium)"
+# Rob Zombie's threat level is medium
 
 puts "\nteen_wolf (test Werewolf initialize)"
-# teen_wolf = Werewolf.new
-# # Rawr!
-# # 6 monsters now roam the world!
-# puts "teen_wolf's threat_level is #{teen_wolf.threat_level} (low)"
-# #teen_wolf's threat_level is low
+teen_wolf = Werewolf.new
+# Rawr!
+# 6 monsters now roam the world!
+puts "teen_wolf's threat_level is #{teen_wolf.threat_level} (low)"
+#teen_wolf's threat_level is low
 
 puts "\nteen_wolf full moon (test Werewolf#update_threat_level)"
-# puts "when full_moon is true, threat level returns #{teen_wolf.update_threat_level(true)} (midnight)"
-# # when full_moon is true, threat level is midnight
-# puts "... threat_level is set to #{teen_wolf.threat_level} (midnight)"
-# # threat_level is set to midnight
-# puts "when full_moon is false, threat level returns #{teen_wolf.update_threat_level(false)} (low)"
-# # when full_moon is false, threat level is low
-# puts "... threat_level is set to #{teen_wolf.threat_level} (low)"
-# # threat_level is set to low
+puts "when full_moon is true, threat level returns #{teen_wolf.update_threat_level(true)} (midnight)"
+# when full_moon is true, threat level is midnight
+puts "... threat_level is set to #{teen_wolf.threat_level} (midnight)"
+# threat_level is set to midnight
+puts "when full_moon is false, threat level returns #{teen_wolf.update_threat_level(false)} (low)"
+# when full_moon is false, threat level is low
+puts "... threat_level is set to #{teen_wolf.threat_level} (low)"
+# threat_level is set to low
 
 puts "\n(test class descriptions)"
-# puts "Monster class: #{Monster.class_description}"
-# puts "Zombie class: #{Zombie.class_description}"
-# puts "Werewolf class: #{Werewolf.class_description}"
+puts "Monster class: #{Monster.class_description}"
+puts "Zombie class: #{Zombie.class_description}"
+puts "Werewolf class: #{Werewolf.class_description}"
 
 #### MODULES ####
 puts "\n#### MODULES ####"
