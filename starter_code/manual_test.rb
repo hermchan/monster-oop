@@ -92,21 +92,21 @@ puts "Werewolf class: #{Werewolf.class_description}"
 puts "\n#### MODULES ####"
 
 puts "\nvamp (test Vampire, with Flying module)"
-# vamp = Vampire.new
-# # Rawr!
-# # 7 monsters now roam the world!
-# vamp.fly
-# # it soars through the air
-# puts "inherited vampire threat level is #{vamp.threat_level} (medium)"
-# # inherited vampire threat level is medium
+vamp = Vampire.new
+# Rawr!
+# 7 monsters now roam the world!
+vamp.fly
+# it soars through the air
+puts "inherited vampire threat level is #{vamp.threat_level} (medium)"
+# inherited vampire threat level is medium
 
 puts "\ndracula (test Vampire / Flying with name)"
-# dracula = Vampire.new(:high)
-# # Rawr!
-# # 8 monsters now roam the world!
-# dracula.name = "Count Dracula"
-# dracula.fly
-# # Count Dracula soars through the air
+dracula = Vampire.new(:high)
+# Rawr!
+# 8 monsters now roam the world!
+dracula.name = "Count Dracula"
+dracula.fly
+# Count Dracula soars through the air
 
 #### STRETCH ####
 puts "\n#### STRETCH ####"

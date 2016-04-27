@@ -55,7 +55,6 @@ end
 # Werewolf class
 class Werewolf < Monster
 
-
   # werewolf version of class_description
   @class_description = "I am Jacob from Twilight and I am a wolf"
   # initial behavior and values
@@ -72,14 +71,20 @@ class Werewolf < Monster
     end
     @threat_level
   end
-# Flying module
+end
 
+# Flying module
+module Flying
   #fly method
+  def fly
+    p "it soars across the sky"
+  end
+end
 
 # Vampire class
-
+class Vampire < Monster
   # vampire class description
-
+  @class_description = "I'm pale"
   # Flying module included
-
+  include Flying
 end
