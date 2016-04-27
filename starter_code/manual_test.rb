@@ -1,49 +1,49 @@
-require "./solutions/stretch.rb"
+require "./starter_code/monster.rb"
 
 #### BASE CLASS ####
 puts "\n#### BASE CLASS ####"
 
 
 puts "\nRabbit of Caerbannog (test habitat)"
-# rabbit = Monster.new
-# # Rawr
-# # 1 monsters now roam the world!
-# rabbit.habitat = "Cave of Caerbannog"
-# puts "habitat is #{rabbit.habitat}  (Cave of Caerbannog)"
-# # habitat is Cave of Caerbannog
+rabbit = Monster.new
+# Rawr
+# 1 monsters now roam the world!
+rabbit.habitat = "Cave of Caerbannog"
+puts "habitat is #{rabbit.habitat}  (Cave of Caerbannog)"
+# habitat is Cave of Caerbannog
 
 puts "\ndalek (test setting initial threat_level)"
-# dalek = Monster.new(:high)
-# # Rawr
-# # 2 monsters now roam the world!
-# puts "threat_level is #{dalek.threat_level} (high)"
-# # threat level is high
+dalek = Monster.new(:high)
+# Rawr
+# 2 monsters now roam the world!
+puts "threat_level is #{dalek.threat_level} (high)"
+# threat level is high
 
 puts "\nteletubby (test default threat_level)"
-# teletubby = Monster.new
-# # Rawr
-# # 3 monsters now roam the world!
-# puts "threat_level is #{teletubby.threat_level} (medium)"
-# # threat level is medium
+teletubby = Monster.new
+# Rawr
+# 3 monsters now roam the world!
+puts "threat_level is #{teletubby.threat_level} (medium)"
+# threat level is medium
 
 puts "\nyeti (test #habitat?)"
-# yeti = Monster.new
-# # Rawr!
-# # 4 monsters now roam the world!
-# yeti.habitat = "tundra"
-# puts "yeti habitat is swamp: #{yeti.habitat?('swamp')} (false)"
-# # yeti habitat is swamp: false
-# puts "yeti habitat is tundra: #{yeti.habitat?('tundra')} (true)"
-# # yeti habitat is tundra: true
+yeti = Monster.new
+# Rawr!
+# 4 monsters now roam the world!
+yeti.habitat = "tundra"
+puts "yeti habitat is swamp: #{yeti.habitat?('swamp')} (false)"
+# yeti habitat is swamp: false
+puts "yeti habitat is tundra: #{yeti.habitat?('tundra')} (true)"
+# yeti habitat is tundra: true
 
 puts "\n(test Monster.count getter)"
-# puts "Monster count is #{Monster.count} (4)"
-# # Monster count is 4
+puts "Monster count is #{Monster.count} (4)"
+# Monster count is 4
 
 puts "\ncompassion? (test name instance variable)"
-# rabbit.name = "Rabbit of Caerbannog"  # setter
-# puts "name of rabbit is #{rabbit.name} (Rabbit of Caerbannog)"  # getter
-# # name of rabbit is Rabbit of Caerbannog
+rabbit.name = "Rabbit of Caerbannog"  # setter
+puts "name of rabbit is #{rabbit.name} (Rabbit of Caerbannog)"  # getter
+# name of rabbit is Rabbit of Caerbannog
 
 puts "\nteletubby (medium) vs dalek (high) (test Monster.fight)"
 # dalek.name = "dalek"
@@ -105,7 +105,7 @@ puts "\ndracula (test Vampire / Flying with name)"
 # # Rawr!
 # # 8 monsters now roam the world!
 # dracula.name = "Count Dracula"
-# dracula.fly  
+# dracula.fly
 # # Count Dracula soars through the air
 
 #### STRETCH ####
@@ -143,7 +143,7 @@ puts "\n(test Comparable)"
 # monster_array = [
 # 	rubber_ducky,  # :low
 # 	rob,  # :medium
-# 	dalek,  # :high 
+# 	dalek,  # :high
 # 	teen_wolf # :midnight
 # ]
 # puts "\nshuffling monsters:"
@@ -151,4 +151,3 @@ puts "\n(test Comparable)"
 # puts "\nsorted by Ruby using <=>"
 # p monster_array.sort!
 # puts "(expected order is ducky, Rob Zombie, dalex, Michael)"
-
